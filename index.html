@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>R&E Auto Hub</title>
+        <meta name="description" content="" />
+
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <link
+            rel="shortcut icon"
+            href="./assets/main-main-logo.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/build.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#ffffff]"
+    >
+        <header
+        
+            class="tw-fixed tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-lg:tw-mr-auto lg:tw-justify-between"
+        >
+            <div
+                class="tw-absolute tw-left-0 tw-top-0 tw-z-[-1] tw-h-0 tw-w-full tw-bg-black tw-shadow-md"
+                id="expanding-header-bg"
+            >
+                <!-- expands the white background as scroll -->
+            </div>
+
+            <div class="tw-flex tw-w-max tw-place-items-center tw-gap-3">
+                <!-- <img src="./assets/public accountant.jpg"
+                alt="Stroemer logo" class="tw-w-full tw-h-full tw-object"> -->
+                <div class="tw-h-[90px] tw-w-[200px] tw-p-[4px]">
+                    <img
+                        src="./assets/main-logo.png"
+                        alt="logo"
+                        class="tw-object tw-h-full tw-w-full"
+                    />
+                </div>
+            </div>
+            <div class="tw-w-6"></div>
+            <div
+                class="collapsible-header animated-collapse"
+                id="collapsed-items"
+            >
+            
+                <div
+                    class="tw-flex tw-h-full tw-uppercase tw-w-max tw-gap-5 tw-text-xs tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-2 lg:tw-mx-auto lg:tw-place-items-center tw-font-GothamBook"
+                >
+                    <a class="header-links" href="#about-section"> About </a>
+                    <a class="header-links" href=""> Our Background </a>
+                    <a class="header-links" href=""> Our Mission </a>
+                    <a class="header-links" href=""> Services </a>
+                    <a class="header-links" href=""> Our Brands </a>
+                    <a class="header-links" href=""> Why Choose Us </a>
+                    <a class="header-links" href=""> Gallery </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            >
+                <!-- <i class="bi bi-list"></i> -->
+            </button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-h-[100dvh]"
+            id="hero-section"
+        >
+            <img
+                src="./assets/images/homepage/hero-1.jpg"
+                alt=""
+                class="tw-h-full tw-w-full tw-scale-[1.3] tw-object-cover"
+                id="hero-image"
+            />
+            <div
+                class="overlay-gradient tw-absolute tw-top-0 tw-h-full tw-w-full max-lg:tw-z-[2] max-lg:!tw-bg-[#1c1c1ca2]"
+            ></div>
+            <div
+                class="tw-absolute tw-max-w-[45%] tw-top-[50%] tw-left-[50%] tw-translate-x-[-50%] tw-translate-y-[-50%] tw-flex tw-flex-col tw-gap-4 tw-p-2  max-md:tw-place-content-center max-md:tw-place-items-center"
+            >
+                <h2
+                    class="tw-text-3xl tw-font-bold tw-uppercase max-md:tw-text-3xl tw-font-A4SPEEDBol"
+                >
+                    <span class="tw-w-full tw-text-center" style="color: #ffffff; letter-spacing: 4.5px; background-color: hsla(174, 92%, 57%, 0.331); padding: 10px 20px; display: inline-block; transform: skew(-20deg); font-family: A4SPEEDBold;">
+                        ONE-STOP DETAILING SOLUTION
+                    </span>
+                    <!-- <br class="max-md:tw-hidden">     -->
+                </h2>
+                <span
+                    class="tw-font-GothamBook tw-mt-2 tw-text-start tw-text-base max-md:tw-text-base tw-text-white"
+                    style="display: block; text-align: center;"
+                >
+                Where your vehicle's transformation begins! We pride ourselves on being your
+                all-in-one destination for premium auto detailing, combining expertise, innovation,
+                and personalized service to create a unique experience.
+                </span>
+            </div>
+        </section>
+
+        <section 
+        class="tw-w-full tw-gap-[10%] tw-bg-gradient-to-br tw-from-[#05ffe6] tw-via-[#dff9f9] tw-via-[10%] tw-to-white tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]"
+        id="about-section"
+        >
+            <div
+                class=" tw-w-full tw-grid tw-grid-cols-2"
+            >
+                <div
+                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-gap-[3%] max-lg:tw-text-center "
+                >
+                    <h2
+                        class="tw-font-A4SPEEDBold primary-text-color tw-text-3xl tw-uppercase"
+                        style="margin-top: 10%; letter-spacing: 0.2em;"
+                    >
+                        <span style="border-left: 2px solid #05ffe6; padding-left: 10px; line-height: 2;">About Us</span>
+                    </h2>
+                    <div class="tw-text-start tw-font-GothamBook">
+                        Welcome to <strong class="tw-font-GothamMedium">R&E HUB</strong>, where we are dedicated
+                        to Revolutionizing Experience in car detailing
+                        and providing Eco-Friendly Solutions for window
+                        tinting. Our mission is to elevate the standards of
+                        vehicle care while prioritizing sustainability.
+                    </div>
+                    <img
+                    src="./assets/images/homepage/hero-2-icon.png"
+                    alt=""
+                    style="max-width: 350px;"
+                    class="tw-object-cover"
+                    />
+                </div>
+
+                <div
+                    class="tw-flex tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] "
+                >
+                    <img
+                        src="./assets/images/homepage/hero-2.png"
+                        alt=""
+                        class="tw-h-full tw-object-contain "
+                    />
+                </div>
+            </div>
+        <div>
+            <div
+            class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] tw-pt-10 tw-pb-10 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+            >
+                <h2
+                    class="tw-font-A4SPEEDBold  primary-text-color tw-text-3xl"
+                    style="letter-spacing: 0.2em;"
+                >
+                WE REPRESENT 
+                </h2>
+                <div class="tw-flex tw-gap-6 tw-text-start tw-pt-6" >
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            “R”evolutionizing Experience
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            At R&E HUB, we believe that every aspect of 
+                            car detailing should be exceptional. We focus 
+                            on delivering a seamless, customer-centric 
+                            experience that transforms how you care for 
+                            your vehicle. From intuitive online scheduling 
+                            to personalized consultations, we make it 
+                            easy and enjoyable for you to maintain your 
+                            car’s appearance.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            “E”co-Friendly
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            We’re committed to protecting the
+                            environment while enhancing your vehicle or
+                            homes. Our window tinting solutions not only
+                            provide superior UV protection and energy
+                            efficiency but also contains negative ions to
+                            eliminate bacteria and bad odors.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            “H”ub
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            The essence of our brand - the community.
+                            We envision R&E AUTO HUB as more than a
+                            service provider; Our goal is to cultivate a
+                            network where individuals and organizations
+                            can collaborate, support each other, and
+                            grow together.
+                        </div>
+                    </div>
+                </div>
+                <p class="tw-mt-6 tw-font-GothamBookItalic tw-text-start" >
+                    By choosing <strong class="tw-font-GothamMedium">R&E HUB</strong>, you’re not just opting for top-notch detailing and tinting; you’re joining a movement towards a more sustainable and enjoyable vehicle ownership experience. Discover how we’re revolutionizing the industry - one detail at a time!
+                </p>
+        
+            </div>
+        </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-h-[600px] tw-w-full tw-flex-col tw-overflow-hidden "
+            >
+            <img src="./assets/images/homepage/hero-3.jpg" alt="" class="tw-h-full tw-w-full tw-scale-[2] tw-object-cover "
+                id="hero-image" />
+            <div class="overlay-gradient tw-absolute tw-top-0 tw-h-full tw-w-full max-lg:tw-z-[2] max-lg:!tw-bg-[#1c1c1ca2]">
+            </div>
+            <div
+                class="tw-absolute tw-left-[15%] tw-top-[50%] tw-z-[5] tw-flex tw-min-w-[420px] tw-max-w-[500px] tw-translate-y-[-50%] tw-flex-col tw-gap-4 tw-p-2 tw-text-white max-md:tw-left-[50%] max-md:tw-translate-x-[-50%] max-md:tw-place-content-center max-md:tw-place-items-center">
+        
+                <h2 class="tw-font-A4SPEEDBold tw-text-3xl tw-font-bold tw-uppercase max-md:tw-text-3xl" style="letter-spacing: 0.3em; color: #05ffe6;">
+                    OUR BACKGROUND 
+                    <!-- <br class="max-md:tw-hidden">     -->
+                </h2>
+                <span class="tw-mt-2 tw-w-full tw-text-justify tw-text-lg max-md:tw-text-base">
+                    Founded in 2017, started with a passion for cars and an eye for 
+                    detail. What began as a small auto detailing outlet has since grown 
+                    into a full-service detailing company with a loyal customer base 
+                    and a reputation for perfection.
+                </span>
+
+                <h2 class="tw-pt-5 tw-font-A4SPEEDBold tw-text-3xl tw-font-bold tw-uppercase max-md:tw-text-3xl" style="letter-spacing: 0.3em; color: #05ffe6;">
+                    OUR MISSION 
+                    <!-- <br class="max-md:tw-hidden">     -->
+                </h2>
+                <span class="tw-mt-2 tw-w-full tw-text-justify tw-text-lg max-md:tw-text-base">
+                    At R&E HUB, our mission is clear: to revolutionize the car detailing experience while championing eco-friendly practices. 
+                    We are committed to transforming how you care for your vehicle, ensuring that every service we provide enhances both its beauty and longevity.
+                </span>
+            </div>
+        </section>
+
+        <section class="tw-w-full  tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[15%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+            <div
+            class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] tw-pt-10 tw-pb-10 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+            >
+                <h2
+                    class="tw-font-A4SPEEDBold  primary-text-color tw-text-3xl"
+                    style="letter-spacing: 0.2em;"
+                >
+                WHAT DRIVES US 
+                </h2>
+                <div class="tw-flex tw-gap-6 tw-text-start tw-pt-6" >
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            Customer-Centric Innovation
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            We prioritize your needs by continually
+                            refining our processes and services. Our goal
+                            is to create an effortless and enjoyable
+                            experience, making vehicle care as
+                            convenient and satisfying as possible.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            Sustainability at Heart
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            We believe in a cleaner, greener future. Our
+                            eco-friendly practices not only protect your
+                            vehicle and homes but also safeguard the
+                            environment. From our selection of
+                            sustainable products to our energy-efficient
+                            methods, every decision we make reflects
+                            our commitment to ecological responsibility.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tw-font-GothamBlack tw-text-lg">
+                            Excellence in Every Detail
+                        </div>
+                        <div class="tw-max-w-[450px] tw-font-GothamBook tw-pt-4">
+                            We don’t just meet expectations; we
+                            exceed them. Our skilled team is dedicated
+                            to providing meticulous care and attention
+                            to detail, ensuring your vehicle shines both
+                            inside and out.
+                        </div>
+                    </div>
+                </div>
+                <p class="tw-mt-6 tw-font-GothamBookItalic tw-text-start" >
+                    At <strong class="tw-font-GothamMedium">R&E HUB</strong>, we are not just in the business of car detailing; we are on a mission to redefine it.
+                    Join us as we pave the way for a more innovative and sustainable approach to vehicle care!
+                </p>
+        
+            </div>
+    
+        </section>
+
+        <section
+            class="tw-w-full tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%] tw-place-content-center tw-place-items-center"
+            style="background-image: url('./assets/images/homepage/hero-4.png');">
+            <h2 class="tw-text-white tw-text-5xl tw-font-medium tw-uppercase max-md:tw-text-3xl">
+                Our Services
+            </h2>
+            <div class="tw-flex tw-min-h-[60vh] tw-w-full tw-place-content-center tw-place-items-center">
+        
+                <div class="tw-grid tw-grid-cols-2 tw-gap-5 tw-h-full max-lg:tw-mt-4 max-lg:tw-text-center tw-text-white">
+                    <div class="tw-max-w-[200px]">
+                        <div
+                        class="tw-flex tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[400px] max-md:tw-w-[400px]">
+                            <img src="./assets/images/homepage/h4-coating.png" alt="" class="tw-object-contain" />
+                        </div>
+                        <h4>COATING</h4>
+                        <div class="tw-mt-6  tw-text-justify">
+                            Designed for advanced protection and superior
+                            finishes. Utilizing top technology, our coatings
+                            deliver unmatched glossiness and durability,
+                            ensuring your car looks stunning while
+                            safeguarding against environmental damage.
+                        </div>
+                    </div>
+                    <div class="tw-max-w-[200px]">
+                        <div
+                        class="tw-flex tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[400px] max-md:tw-w-[400px]">
+                            <img src="./assets/images/homepage/h4-window-tint.png" alt="" class="tw-object-contain" />
+                        </div>
+                        <h4>WINDOW TINT</h4>
+                        <div class="tw-mt-6  tw-text-justify">
+                            Featuring high heat rejection and superior UV
+                            protection, our films keep your vehicle cool and
+                            shield your interior from fading. Crafted with
+                            top-quality materials and enhanced with ionizer
+                            features, our tint improves air quality by reducing pollutants and allergens.
+                        </div>
+                        <span>&bull; BUILDING WINDOW FILM</span>
+                    </div>
+                    <div class="tw-max-w-[200px]">
+                        <div
+                        class="tw-flex tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[400px] max-md:tw-w-[400px]">
+                            <img src="./assets/images/homepage/h4-detailing.png" alt="" class="tw-object-contain" />
+                        </div>
+                        <h4>DETAILING</h4>
+                        <div class="tw-mt-6  tw-text-justify">
+                            Where superior finishes meet meticulous attention to detail. Our skilled craftsmen take
+                            pride in their workmanship, ensuring every inch of your car receives the care it deserves.
+                        </div>
+                    </div>
+                    <div class="tw-max-w-[200px]">
+                        <div
+                        class="tw-flex tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[400px] max-md:tw-w-[400px]">
+                            <img src="./assets/images/homepage/h4-ppf.png" alt="" class="tw-object-contain" />
+                        </div>
+                        <h4>PPF</h4>
+                        <div class="tw-mt-6  tw-text-justify">
+                            Designed to guard against scratches, chips, and environmental damage. This transparent barrier
+                            preserves your car's finish while enhancing its gloss and clarity.
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+            <div>
+                <div class="tw-text-center">
+                    <h2 class="primary-text-color tw-text-5xl tw-font-medium tw-uppercase max-md:tw-text-3xl tw-bg-white">
+                        TALK TO OUR SPECIALIST
+                    </h2>
+        
+                    <p class="tw-mt-6 tw-text-center tw-text-white">
+                        Checkout Best Protection Promo Package Now
+                    </p>
+        
+                </div>
+            </div>
+        </section>
+
+
+        <section 
+        class="tw-w-full  tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]"
+        >
+            <h2 class="tw-text-center">Our Brands</h2>
+            <div
+            class="tw-flex tw-min-h-[60vh] tw-w-full tw-place-content-center tw-place-items-center "
+            >
+                <div
+                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+                >
+                    <img
+                    src="./assets/images/homepage/brand-logo-tevo.png"
+                    alt=""
+                    class="tw-w-full tw-object-cover"
+                    />
+                    <h3
+                        class="primary-text-color tw-text-2xl tw-font-medium tw-uppercase max-md:tw-text-3xl"
+                    >
+                        EVO-lise the business
+                    </h3>
+                    <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
+                        Since the year 2014, TEVO has been providing a quality and well-estabilished services in the automative industry and offering a high quality full range of automative products.
+                    </div>
+      
+                </div>
+
+                <div
+                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+                >
+                    <img
+                    src="./assets/images/homepage/brand-logo-ravo.png"
+                    alt=""
+                    class="tw-w-full tw-object-cover"
+                    />
+                    <h3
+                        class="primary-text-color tw-text-2xl tw-font-medium tw-uppercase max-md:tw-text-3xl"
+                    >
+                        IONMAX
+                    </h3>
+                    <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
+                        Next Generation loniser Window Film
+                    </div>
+                    <img
+                    src="./assets/images/homepage/logo-sirim.png"
+                    alt=""
+                    class="tw-w-full tw-object-cover"
+                    />
+                </div>
+            </div>
+        </section>
+
+ 
+        <section
+            class="tw-w-full tw-place-content-center tw-place-items-center  tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 max-md:tw-px-2 lg:tw-px-[10%]"
+        >
+            <h2>WHY CHOOSE US</h2>
+            <div class="tw-flex  max-md:tw-flex-col tw-gap-[10%]">
+                <div
+                class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden max-md:tw-hidden"
+                >
+                    <img
+                        src="./assets/images/homepage/top-view.jpg"
+                        alt=""
+                        class="tw-w-full tw-object-cover"
+                    />
+                </div>
+                <div
+                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden max-md:tw-hidden"
+                >
+                    <img
+                        src="./assets/images/homepage/top-view.jpg"
+                        alt=""
+                        class="tw-w-full tw-object-cover"
+                    />
+                </div>
+            </div>
+         
+
+        </section>
+
+        <section class="tw-w-full  tw-gap-[10%] tw-bg-black tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+            <h2
+            class="primary-text-color tw-text-5xl tw-font-medium tw-uppercase max-md:tw-text-3xl"
+        >
+        SHOWCASE OF EXCELLENCE
+        </h2>
+            <div
+            class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+            >
+            
+                <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
+                    Welcome to R&E HUB, where we are dedicated
+                    to Revolutionizing Experience in car detailing
+                    and providing Eco-Friendly Solutions for window
+                    tinting. Our mission is to elevate the standards of
+                    vehicle care while prioritizing sustainability.
+                </div>
+                <img
+                src="./assets/images/homepage/hero-2-icon.png"
+                alt=""
+                class="tw-w-full tw-object-cover"
+                />
+            </div>
+            <div>
+                <div
+                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+                >
+                    <div class="tw-flex tw-gap-5" >
+                        <div>
+                            <div class="tw-font-bold">
+                                “R”evolutionizing Experience
+                            </div>
+                        </div>
+                    <div>
+        </section>
+        <footer
+            class="tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-[#000] tw-p-[5%] tw-px-[10%] tw-text-white max-lg:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/main-logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-h-[100px] tw-max-w-[100px]"
+                />
+
+                <h2 class="tw-text-xl">asras</h2>
+                <div>
+                    jalan abc,
+                    <br />
+                    Fairfield,
+                    <br />
+                    dney,
+                    <br />
+                    Malaysia
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Services</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">ses</a>
+                    <a href="" class="footer-link">s </a>
+                    <a href="" class="footer-link">Bst</a>
+                    <a href="" class="footer-link">s</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">About us</a>
+                    <a href="" class="footer-link">FAQ</a>
+                    <a href="" class="footer-link">Contact Us</a>
+                    <a href="" class="footer-link">Locations</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+        integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./scripts/utils.js"></script>
+    <script src="index.js"></script>
+</html>

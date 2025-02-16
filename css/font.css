@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'A4SPEEDBold';
+  src: url('./../assets/font/A4SPEED-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url('./../assets/font/Gotham-Black.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('./../assets/font/Gotham-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./../assets/font/GothamBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBookItalic';
+  src: url('./../assets/font/GothamBookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('./../assets/font/GothamMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
