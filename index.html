@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="./css/build.css" />
         <link rel="stylesheet" href="./css/index.css" />
         <link rel="stylesheet" href="./css/font.css" />
-
+        <link rel="stylesheet" href="./css/gallery.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
@@ -402,7 +402,7 @@
                 <div class="tw-text-center">
                     
                     <h2 class="tw-font-GothamMedium tw-text-3xl tw-font-black tw-uppercase max-md:tw-text-3xl" style="background-color: #05ffe6; padding: 38px 45px 20px 45px; display: inline-block; transform: skew(-10deg); letter-spacing: 0.1em;">
-                            <span style="transform: skew(20deg); display: inline-block;">
+                            <span style="transform: skew(10deg); display: inline-block;">
                                 TALK TO OUR SPECIALIST
                             </span>
                     </h2>
@@ -478,66 +478,121 @@
         <section
             class="tw-w-full tw-place-content-center tw-place-items-center  tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 max-md:tw-px-2 lg:tw-px-[10%]"
         >
-            <h2>WHY CHOOSE US</h2>
-            <div class="tw-flex  max-md:tw-flex-col tw-gap-[10%]">
-                <div
-                class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden max-md:tw-hidden"
-                >
-                    <img
-                        src="./assets/images/homepage/top-view.jpg"
-                        alt=""
-                        class="tw-w-full tw-object-cover"
-                    />
+            <h2 class="tw-font-A4SPEEDBold tw-text-center primary-text-color tw-text-4xl tw-uppercase tw-pb-10 tw-pt-14"
+                style="letter-spacing: 0.2em;"
+            >
+                WHY CHOOSE US
+            </h2>
+            <div class="tw-flex  max-md:tw-flex-col tw-gap-[10%] tw-pb-40">
+
+                <div class="collections-container">
+                    <div class="image-collection">
+                        <div class="vertical-image image-container">
+                            <img src="./assets/images/homepage/Yap-Weng-Soon-259x460.png" alt="Vertical Image 1">
+                        </div>
+                        <div class="horizontal-images">
+                            <div class="horizontal-image image-container">
+                                <img src="./assets/images/homepage/tevo cert-yap-1.jpg" alt="Horizontal Image 1a">
+                            </div>
+                            <div class="horizontal-image image-container">
+                                <img src="./assets/images/homepage/tevo cert-yap-2.jpg" alt="Horizontal Image 1b">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="image-collection">
+                        <div class="vertical-image image-container">
+                            <img src="./assets/images/homepage/Chu-Chern-Shiong-259x460.png" alt="Vertical Image 2">
+                        </div>
+                        <div class="horizontal-images">
+                            <div class="horizontal-image image-container">
+                                <img src="./assets/images/homepage/tevo cert-chu-1.jpg" alt="Horizontal Image 2a">
+                            </div>
+                            <div class="horizontal-image image-container">
+                                <img src="./assets/images/homepage/tevo cert-chu-2.jpg" alt="Horizontal Image 2b">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden max-md:tw-hidden"
-                >
-                    <img
-                        src="./assets/images/homepage/top-view.jpg"
-                        alt=""
-                        class="tw-w-full tw-object-cover"
-                    />
-                </div>
+
             </div>
          
 
         </section>
 
-        <section class="tw-w-full  tw-gap-[10%] tw-bg-black tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+        <section class="gallery">
             <h2
-            class="primary-text-color tw-text-5xl tw-font-medium tw-uppercase max-md:tw-text-3xl"
+            class="tw-font-A4SPEEDBold tw-text-center tw-text-white tw-text-4xl tw-uppercase tw-pb-10 tw-pt-14"
+                style="letter-spacing: 0.2em;"
         >
         SHOWCASE OF EXCELLENCE
         </h2>
-            <div
-            class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
-            >
-            
-                <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
-                    Welcome to R&E HUB, where we are dedicated
-                    to Revolutionizing Experience in car detailing
-                    and providing Eco-Friendly Solutions for window
-                    tinting. Our mission is to elevate the standards of
-                    vehicle care while prioritizing sustainability.
+            <div class="container">
+                <div class="row">
+                    <div class="gallery-filter">
+                        <span class="filter-item active" data-filter="all">All</span>
+                        <span class="filter-item" data-filter="coating">coating</span>
+                        <span class="filter-item" data-filter="window-tint">window tint</span>
+                        <span class="filter-item" data-filter="detailing">detailing</span>
+                    </div>
                 </div>
-                <img
-                src="./assets/images/homepage/hero-2-icon.png"
-                alt=""
-                class="tw-w-full tw-object-cover"
-                />
-            </div>
-            <div>
-                <div
-                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
-                >
-                    <div class="tw-flex tw-gap-5" >
-                        <div>
-                            <div class="tw-font-bold">
-                                “R”evolutionizing Experience
-                            </div>
+                <div class="row">
+                    <!-- gallery item start -->
+                    <div class="gallery-item coating">
+                        <div class="gallery-item-inner">
+                            <img src="https://i.postimg.cc/7PJ4yYHh/revolt-164-6w-VEHf-I-unsplash.jpg" alt="coating">
                         </div>
-                    <div>
+                    </div>
+                    <!-- gallery item end -->
+                    <!-- gallery item start -->
+                    <div class="gallery-item window-tint">
+                        <div class="gallery-item-inner">
+                            <img src="https://i.postimg.cc/zf7MT4q9/istockphoto-1289318271-170667a.jpg" alt="window-tint">
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                    <!-- gallery item start -->
+                    <div class="gallery-item detailing">
+                        <div class="gallery-item-inner">
+                            <img src="https://i.postimg.cc/vZ7QQdMP/nordwood-themes-F3-Dde-9thd8-unsplash.jpg" alt="detailing">
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                    <!-- gallery item start -->
+                    <div class="gallery-item window-tint">
+                        <div class="gallery-item-inner">
+                            <img src="https://i.postimg.cc/3xTY15HR/c-d-x-PDX-a-82obo-unsplash.jpg" alt="window-tint">
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                    <!-- gallery item start -->
+                    <div class="gallery-item detailing">
+                        <div class="gallery-item-inner">
+                            <img src="https://i.postimg.cc/PrYL89TD/patrick-dozk-Vh-Dyvh-Q-unsplash.jpg" alt="detailing">
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                    <!-- gallery item start -->
+                    <div class="gallery-item window-tint">
+                        <div class="gallery-item-inner">
+        <img src="https://i.postimg.cc/PqYyN2Nr/ervo-rocks-Zam8-Tv-Eg-N5o-unsplash.jpg" alt="window-tint3">
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                </div>
+            </div>
         </section>
+
+        <section class="tw-w-full  tw-gap-[10%] tw-bg-white tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]">
+            <div class="tw-flex tw-flex-col tw-items-center tw-text-white tw-pt-10"></div>
+                <video controls class="tw-w-full tw-max-w-4xl tw-rounded-md">
+                    <source src="./assets/videos/R&E_Auto Mobile_intro-horizontal.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="tw-pt-10"></div>
+        </section>
+
         <footer
             class="tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-[#000] tw-p-[5%] tw-px-[10%] tw-text-white max-lg:tw-flex-col"
         >
@@ -551,13 +606,12 @@
                     class="tw-max-h-[100px] tw-max-w-[100px]"
                 />
 
-                <h2 class="tw-text-xl">asras</h2>
                 <div>
-                    jalan abc,
+                    RC Residence,
                     <br />
-                    Fairfield,
+                    C-G-17 Sungai Besi,
                     <br />
-                    dney,
+                    57100, Kuala Lumpur,
                     <br />
                     Malaysia
                 </div>
@@ -584,10 +638,10 @@
             <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
                 <h2 class="tw-text-3xl max-md:tw-text-xl">Services</h2>
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">ses</a>
-                    <a href="" class="footer-link">s </a>
-                    <a href="" class="footer-link">Bst</a>
-                    <a href="" class="footer-link">s</a>
+                    <a href="" class="footer-link">Coating</a>
+                    <a href="" class="footer-link">Window Tint</a>
+                    <a href="" class="footer-link">Detailing</a>
+                    <a href="" class="footer-link">PPF</a>
                 </div>
             </div>
 
@@ -601,6 +655,7 @@
                     <a href="" class="footer-link">Privacy policy</a>
                 </div>
             </div>
+
         </footer>
     </body>
 
@@ -619,4 +674,5 @@
 
     <script src="./scripts/utils.js"></script>
     <script src="index.js"></script>
+    <script src="./scripts/gallery.js"></script>
 </html>

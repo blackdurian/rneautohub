@@ -297,3 +297,38 @@ q::after {
     }
 
 }
+
+.collections-container {
+    display: flex;
+    justify-content: space-between;
+}
+.image-collection {
+    display: flex;
+    width: 45%;
+    height: 300px; /* Total height of the collection */
+}
+.vertical-image {
+    width: 40%;
+    height: 100%; /* Full height of the collection */
+    margin-right: 10px;
+}
+.horizontal-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%; /* Full height of the collection */
+}
+.horizontal-image {
+    height: calc(50% - 5px); /* Half height minus half the gap */
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.image-container img:hover {
+    transform: scale(1.1);
+}

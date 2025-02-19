@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us</title>
+    <style>
+        .collections-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-collection {
+            display: flex;
+            width: 48%;
+            height: 600px; /* Total height of the collection */
+        }
+        .vertical-image {
+            width: 30%;
+            height: 100%; /* Full height of the collection */
+            margin-right: 10px;
+        }
+        .horizontal-images {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 70%;
+            height: 100%; /* Full height of the collection */
+        }
+        .horizontal-image {
+            height: calc(50% - 5px); /* Half height minus half the gap */
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>Why Choose Us</h2>
+    <div class="collections-container">
+        <div class="image-collection">
+            <div class="vertical-image image-container">
+                <img src="https://picsum.photos/300/600" alt="Vertical Image 1">
+            </div>
+            <div class="horizontal-images">
+                <div class="horizontal-image image-container">
+                    <img src="https://picsum.photos/600/300" alt="Horizontal Image 1a">
+                </div>
+                <div class="horizontal-image image-container">
+                    <img src="https://picsum.photos/600/300" alt="Horizontal Image 1b">
+                </div>
+            </div>
+        </div>
+
+        <div class="image-collection">
+            <div class="vertical-image image-container">
+                <img src="https://picsum.photos/300/600" alt="Vertical Image 2">
+            </div>
+            <div class="horizontal-images">
+                <div class="horizontal-image image-container">
+                    <img src="https://picsum.photos/600/300" alt="Horizontal Image 2a">
+                </div>
+                <div class="horizontal-image image-container">
+                    <img src="https://picsum.photos/600/300" alt="Horizontal Image 2b">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
