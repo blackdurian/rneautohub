@@ -103,6 +103,10 @@ q::after {
     color: var(--primary-text-color);
 }
 
+.primary-btn-color{
+    color: var(--btn-color);
+}
+
 .btn{
     padding: 10px 15px;
     width: max-content;

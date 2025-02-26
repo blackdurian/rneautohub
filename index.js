@@ -25,7 +25,7 @@ gsap.to(expandingBg, {
     height: "100%",
     duration: 3,
     scrollTrigger: {
-        trigger: "#hero-section",
+        trigger: "#about",
         // pin: true, 
         start: "50px 10px", // when the top of the trigger hits the top of the viewport
         end: "80px 50px",
@@ -36,7 +36,7 @@ gsap.to(expandingBg, {
 })
 
 ScrollTrigger.create({
-    trigger: "#hero-section",
+    trigger: "#about",
     start: "50px 10px", // when the top of the trigger hits the top of the viewport
     end: "60px 40px",
     scrub: 1,
@@ -48,7 +48,7 @@ ScrollTrigger.create({
             e.classList.add("header-white-bg")
         })
         if (isHeaderCollapsed){
-            collapseBtn.classList.add("primary-text-color")
+            collapseBtn.classList.add("primary-btn-color")
         }
         headerWhiteBg = true
     },
@@ -58,15 +58,14 @@ ScrollTrigger.create({
         headerLinks.forEach(e => {
             e.classList.remove("header-white-bg")
         })
-        collapseBtn.classList.remove("primary-text-color")
+        collapseBtn.classList.remove("primary-btn-color")
         collapseBtn.classList.add("tw-text-white")
         headerWhiteBg = false
     }
 })
 
-
-const reviewContainer = document.querySelector(".review-container")
-const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
+// const reviewContainer = document.querySelector(".review-container")
+// const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
 
 
 function onHeaderClickOutside(e) {
@@ -84,7 +83,7 @@ function toggleHeader() {
         // collapseHeaderItems.classList.remove("max-md:tw-opacity-0")
         collapseHeaderItems.classList.add("!tw-opacity-100")
         collapseHeaderItems.style.width = "60vw"
-        collapseBtn.classList.remove("bi-list", "primary-text-color")
+        collapseBtn.classList.remove("bi-list", "primary-btn-color")
         collapseBtn.classList.add("bi-x", "tw-text-white")
         isHeaderCollapsed = false
 
@@ -94,7 +93,7 @@ function toggleHeader() {
         collapseHeaderItems.classList.remove("!tw-opacity-100")
         collapseHeaderItems.style.width = "0vw"
         collapseBtn.classList.remove("bi-x", "tw-text-white")
-        collapseBtn.classList.add("bi-list", headerWhiteBg ? "primary-text-color" : null)
+        collapseBtn.classList.add("bi-list", headerWhiteBg ? "primary-btn-color" : null)
         isHeaderCollapsed = true
         window.removeEventListener("click", onHeaderClickOutside)
 
@@ -107,7 +106,7 @@ function responsive() {
         
     }else{
         isHeaderCollapsed = true
-        collapseBtn.classList.add("bi-list", headerWhiteBg ? "primary-text-color" : null)
+        collapseBtn.classList.add("bi-list", headerWhiteBg ? "primary-btn-color" : null)
     }
 }
 

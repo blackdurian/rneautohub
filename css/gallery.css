@@ -13,9 +13,8 @@ img{
 }
 /*.gallery*/
 .gallery{
-	width: 100%;
+	width: auto;
 	display: block;
-	min-height: 100vh;
   background-image: url('./../assets/images/homepage/h7-bg.png');
   background-size: cover;
   background-position: center;padding: 100px 0;
@@ -38,8 +37,8 @@ img{
 	transition: all 0.3s ease;
 }
 .gallery .gallery-filter .filter-item.active{
-	color: #ff9800;
-	border-color : #ff9800;
+	color: #05ffe6;
+	border-color : #05ffe6;
 }
 .gallery .gallery-item{
 	width: calc(100% / 3);
