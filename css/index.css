@@ -117,10 +117,6 @@ q::after {
     display: flex;
 }
 
-.btn:hover{
-
-}
-
 .input, .input-light{
     padding: 10px 15px;
     outline: none;

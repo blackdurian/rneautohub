@@ -17,7 +17,8 @@ img{
 	display: block;
   background-image: url('./../assets/images/homepage/h7-bg.png');
   background-size: cover;
-  background-position: center;padding: 100px 0;
+  background-position: center;
+	padding: 7vh 0;
 }
 .gallery .gallery-filter{
 	padding: 0 15px;
@@ -66,6 +67,7 @@ img{
 @media(max-width: 991px){
 	.gallery .gallery-item{
 		width: 50%;
+		font-size: 15px;
 	}
 }
 @media(max-width: 767px){
@@ -74,5 +76,6 @@ img{
 	}	
 	.gallery .gallery-filter .filter-item{
 		margin-bottom: 10px;
+		font-size: 13px;
 	}
 }
