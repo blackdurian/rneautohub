@@ -20,7 +20,7 @@
 
         <link
             rel="shortcut icon"
-            href="./assets/main-logo.png"
+            href="./assets/favicon.png"
             type="image/x-icon"
         />
         <link
@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="./css/index.css" />
         <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/gallery.css" />
+        <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
@@ -103,12 +105,17 @@
             class="tw-relative tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-h-[100dvh]"
             id="about"
         >
-            <img
-                src="./assets/images/homepage/hero-1.jpg"
-                alt=""
-                class="tw-h-full tw-w-full tw-scale-[1.3] tw-object-cover"
-                id="hero-image"
-            />
+        <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="tw-h-full tw-w-full tw-object-cover"
+        id="hero-video"
+    >
+        <source src="./assets/videos/hero-1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
             <div
                 class="overlay-gradient tw-absolute tw-top-0 tw-h-full tw-w-full max-lg:!tw-bg-[#1c1c1ca2]"
             ></div>
@@ -118,7 +125,7 @@
                 <h2
                     class="tw-text-2xl lg:tw-text-4xl tw-font-bold tw-uppercase tw-font-A4SPEEDBol"
                 >
-                    <span class="tw-w-full tw-text-center" style="color: #ffffff; letter-spacing: 4.5px; background-color: hsla(174, 92%, 57%, 0.331); padding: 10px 20px; display: inline-block; transform: skew(-20deg); font-family: A4SPEEDBold;">
+                    <span class="tw-w-full tw-text-center" style="color: #ffffff; letter-spacing: 4.5px; padding: 10px 20px; display: inline-block; transform: skew(-20deg); font-family: A4SPEEDBold;">
                         ONE-STOP DETAILING SOLUTION
                     </span>
                     <!-- <br class="max-md:tw-hidden">     -->
@@ -252,7 +259,7 @@
                     OUR BACKGROUND 
                     <!-- <br class="max-md:tw-hidden">     -->
                 </h2>
-                <span class="tw-mt-0 md:tw-mt-2 tw-w-full tw-text-justify lg:tw-text-lg tw-text-base">
+                <span class="tw-mt-0 md:tw-mt-2 tw-w-full tw-text-justify tw-font-GothamBook tw-text-base">
                     Founded in 2017, started with a passion for cars and an eye for 
                     detail. What began as a small auto detailing outlet has since grown 
                     into a full-service detailing company with a loyal customer base 
@@ -263,7 +270,7 @@
                     OUR MISSION 
                     <!-- <br class="max-md:tw-hidden">     -->
                 </h2>
-                <span class="tw-mt-0 md:tw-mt-2 tw-w-full tw-text-justify lg:tw-text-lg tw-text-base">
+                <span class="tw-mt-0 md:tw-mt-2 tw-w-full tw-text-justify tw-font-GothamBook tw-text-base">
                     At R&E HUB, our mission is clear: to revolutionize the car detailing experience while championing eco-friendly practices. 
                     We are committed to transforming how you care for your vehicle, ensuring that every service we provide enhances both its beauty and longevity.
                 </span>
@@ -430,55 +437,34 @@
         id="our-brands"
         >
             <h2 
-            class="tw-font-A4SPEEDBold primary-text-color tw-text-2xl md:tw-text-3xl xl:tw-text-4xl tw-uppercase tw-pb-10 tw-pt-14 tw-text-start md:tw-text-center"
+            class="tw-font-A4SPEEDBold primary-text-color tw-text-2xl md:tw-text-3xl xl:tw-text-4xl tw-uppercase tw-pb-10 tw-pt-14 tw-text-center"
             style="letter-spacing: 0.2em;"
             >
                 Our Brands
             </h2>
             <div
-            class="md:tw-flex md:tw-grap-[5%] lg:tw-gap-[15%] tw-w-full tw-place-content-center tw-pb-14 lg:tw-pb-24"
+            class="md:tw-flex md:tw-grap-[5%] md:tw-gap-[15%] tw-w-full tw-place-content-center tw-pb-14 lg:tw-pb-24"
             >
                 <div 
                 id = "tevo"
-                class="tw-flex tw-h-full tw-flex-col max-lg:tw-mt-4 max-lg:tw-text-center"
+                class="tw-flex tw-h-full tw-flex-col max-lg:tw-mt-4 tw-items-center"
                 >
                     <img
                     src="./assets/images/homepage/brand-logo-tevo.png"
                     alt=""
                     class="tw-max-w-72 md:tw-max-w-80 tw-object-cover"
-                    />
-                    <h3
-                        class="primary-text-color tw-text-base md:tw-text-xl tw-font-medium tw-uppercase tw-font-GothamMedium tw-pt-4 md:tw-pt-10 tw-text-start"
-                    >
-                        EVO-lise the business
-                    </h3>
-                    <div class="tw-pt-4 tw-max-w-[450px] tw-text-start">
-                        Since the year 2014, TEVO has been providing a quality and well-estabilished services in the automative industry and offering a high quality full range of automative products.
-                    </div>
+                    />  
       
                 </div>
-                <div class="tw-border-l tw-border-black max-md::tw-hidden tw-px-4"></div>
+           
                 <div
                 id="ravo"
-                class="tw-flex tw-h-full tw-flex-col max-lg:tw-mt-4 max-lg:tw-text-center"
+                class="tw-flex tw-h-full tw-flex-col max-lg:tw-mt-4 tw-items-center"
                 >
                     <img
                     src="./assets/images/homepage/brand-logo-ravo.png"
                     alt=""
                     class="tw-max-w-72 md:tw-max-w-80 tw-object-cover tw-pt-10 md:tw-pt-0"
-                    />
-                    <h3
-                        class="primary-text-color tw-text-base md:tw-text-xl tw-font-medium tw-uppercase tw-font-GothamMedium tw-pt-4 md:tw-pt-10 tw-text-start"
-                    >
-                        IONMAX
-                    </h3>
-                    <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
-                        Next Generation loniser Window Film
-                    </div>
-                    <img
-                    src="./assets/images/homepage/logo-sirim.png"
-                    alt=""
-                    class="tw-max-w-56 md:tw-max-w-60 tw-object-cover tw-pt-5"
                     />
                 </div>
             </div>
@@ -539,60 +525,45 @@
         >
         SHOWCASE OF EXCELLENCE
         </h2>
-            <div class="container">
-                <div class="row">
-                    <div class="gallery-filter">
-                        <span class="filter-item active" data-filter="all">All</span>
-                        <span class="filter-item" data-filter="coating">coating</span>
-                        <span class="filter-item" data-filter="window-tint">window tint</span>
-                        <span class="filter-item" data-filter="detailing">detailing</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- gallery item start -->
-                    <div class="gallery-item coating">
-                        <div class="gallery-item-inner">
-                            <img src="https://i.postimg.cc/7PJ4yYHh/revolt-164-6w-VEHf-I-unsplash.jpg" alt="coating">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start -->
-                    <div class="gallery-item window-tint">
-                        <div class="gallery-item-inner">
-                            <img src="https://i.postimg.cc/zf7MT4q9/istockphoto-1289318271-170667a.jpg" alt="window-tint">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start -->
-                    <div class="gallery-item detailing">
-                        <div class="gallery-item-inner">
-                            <img src="https://i.postimg.cc/vZ7QQdMP/nordwood-themes-F3-Dde-9thd8-unsplash.jpg" alt="detailing">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start -->
-                    <div class="gallery-item window-tint">
-                        <div class="gallery-item-inner">
-                            <img src="https://i.postimg.cc/3xTY15HR/c-d-x-PDX-a-82obo-unsplash.jpg" alt="window-tint">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start -->
-                    <div class="gallery-item detailing">
-                        <div class="gallery-item-inner">
-                            <img src="https://i.postimg.cc/PrYL89TD/patrick-dozk-Vh-Dyvh-Q-unsplash.jpg" alt="detailing">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start -->
-                    <div class="gallery-item window-tint">
-                        <div class="gallery-item-inner">
-        <img src="https://i.postimg.cc/PqYyN2Nr/ervo-rocks-Zam8-Tv-Eg-N5o-unsplash.jpg" alt="window-tint3">
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                </div>
+        <div class="slider">
+            <button class="slider__control prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider__control next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="slider__container" data-multislide="false" data-step="4">
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-1.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                  <img src="/assets//images/showcase/showcase-2.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                  <img src="/assets//images/showcase/showcase-3.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-4.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-5.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-6.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-7.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-8.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-9.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-10.jpg" alt="" width="100%">
+              </div>
+              <div class="slider__item">
+                <img src="/assets//images/showcase/showcase-11.jpg" alt="" width="100%">
+              </div>
             </div>
+        </div>
         </section>
 
         <section class="tw-w-full tw-gap-[10%] tw-bg-white tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%] tw-justify-items-center">
