@@ -2,15 +2,39 @@
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.rneautohub.com.my/</loc>
   <lastmod>2025-05-06T08:24:23+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://www.rneautohub.com.my/</loc>
+  <video:video>
+    <video:thumbnail_loc>https://www.rneautohub.com.my/assets/videos/hero-1-thumbnail.png</video:thumbnail_loc>
+    <video:title>Auto Detailing in Kuala Lumpur - R&E Auto Hub</video:title>
+    <video:description>Discover how R&E Auto Hub offers premium auto detailing services in Razak City Residences, Sungai Besi, and Kuala Lumpur. Experience innovation and sustainability for your vehicle!</video:description>
+    <video:content_loc>https://www.rneautohub.com.my/assets/videos/hero-1.mp4</video:content_loc>
+    <video:player_loc>https://www.rneautohub.com.my/assets/videos/hero-1.mp4</video:player_loc>
+    <video:duration>120</video:duration>
+    <video:publication_date>2023-10-01</video:publication_date>
+  </video:video>
+</url>
+
+<url>
+  <loc>https://www.rneautohub.com.my/</loc>
+  <video:video>
+    <video:thumbnail_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal-thumbnail.png</video:thumbnail_loc>
+    <video:title>Window Tint and Coating Services in Razak City Residences</video:title>
+    <video:description>Learn about R&E Auto Hub's eco-friendly window tinting and expert coating services in Razak City Residences and Sungai Besi. Protect your vehicle with advanced solutions!</video:description>
+    <video:content_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal.mp4</video:content_loc>
+    <video:player_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal.mp4</video:player_loc>
+    <video:duration>150</video:duration>
+    <video:publication_date>2023-10-01</video:publication_date>
+  </video:video>
+</url>
 
 </urlset>
