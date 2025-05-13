@@ -9,20 +9,20 @@
     <loc>https://www.rneautohub.com.my/</loc>
     <video:video>
       <video:thumbnail_loc>https://www.rneautohub.com.my/assets/videos/hero-1-thumbnail.png</video:thumbnail_loc>
-      <video:title>Auto Detailing in Kuala Lumpur - R&E Auto Hub</video:title>
-      <video:description>Discover how R&E Auto Hub offers premium auto detailing services in Razak City Residences, Sungai Besi, and Kuala Lumpur. Experience innovation and sustainability for your vehicle!</video:description>
+      <video:title>Auto Detailing in Kuala Lumpur - R&amp;E Auto Hub</video:title>
+      <video:description>Discover how R&amp;E Auto Hub offers premium auto detailing services in Razak City Residences, Sungai Besi, and Kuala Lumpur. Experience innovation and sustainability for your vehicle!</video:description>
       <video:content_loc>https://www.rneautohub.com.my/assets/videos/hero-1.mp4</video:content_loc>
       <video:player_loc>https://www.rneautohub.com.my/assets/videos/hero-1.mp4</video:player_loc>
-      <video:duration>120</video:duration>
+      <video:duration>60</video:duration>
       <video:publication_date>2023-10-01</video:publication_date>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal-thumbnail.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://www.rneautohub.com.my/assets/videos/RnE_Auto Mobile_intro-horizontal-thumbnail.png</video:thumbnail_loc>
       <video:title>Window Tint and Coating Services in Razak City Residences</video:title>
-      <video:description>Learn about R&E Auto Hub's eco-friendly window tinting and expert coating services in Razak City Residences and Sungai Besi. Protect your vehicle with advanced solutions!</video:description>
-      <video:content_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal.mp4</video:content_loc>
-      <video:player_loc>https://www.rneautohub.com.my/assets/videos/R&E_Auto Mobile_intro-horizontal.mp4</video:player_loc>
-      <video:duration>150</video:duration>
+      <video:description>Learn about R&amp;E Auto Hub's eco-friendly window tinting and expert coating services in Razak City Residences and Sungai Besi. Protect your vehicle with advanced solutions!</video:description>
+      <video:content_loc>https://www.rneautohub.com.my/assets/videos/RnE_Auto Mobile_intro-horizontal.mp4</video:content_loc>
+      <video:player_loc>https://www.rneautohub.com.my/assets/videos/RnE_Auto Mobile_intro-horizontal.mp4</video:player_loc>
+      <video:duration>56</video:duration>
       <video:publication_date>2023-10-01</video:publication_date>
     </video:video>
   </url>
